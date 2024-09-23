@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+        body {
+            font-family: "Lexend", sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+    <!-- Daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary_bg: '#F9F7F3',
+                        btn_color: '#B4F461',
+
+                    },
+                },
+            },
+        }
+    </script>
+
+</head>
+<!-- Modal -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box text-center">
+        <h3 class="text-4xl font-bold">Congrates!</h3>
+        <div class="my-4">
+            <img class="block ml-auto mr-auto" src="./assets/coin.png" alt="">
+        </div>
+        <p class="py-4">You Have Donated for Humankind</p>
+        <h2 class="font-bold text-2xl">Successfully</h2>
+        <div class="mt-8">
+            <form method="dialog">
+                <button class="btn ">Close Confirmation</button>
+            </form>
+        </div>
+    </div>
+</dialog>
+<!-- Modal -->
+
+<body>
+    <header class="sticky top-0">
+        <div class="bg-primary_bg">
+            <div class="w-10/12 mx-auto">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div>
+                            <button onclick="home()" id="home" class="btn bg-btn_color font-bold px-7 rounded-lg">Home</button>
+                        </div>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <a href="./index.html" class="flex items-center gap-2">
+                            <img class="w-[18%]" src="./assets/logo.png" alt="Logo">
+                            <h1 class="font-bold">Donate Bangladesh</h1>
+                        </a>
+                    </div>
+                    <div class="navbar-end space-x-2">
+                        <h1>
+                            <img src="./assets/coin.png" alt="Coins">
+                            <h2><span>5500</span> BDT</h2>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-10/12 mx-auto my-10 space-y-2">
+        <div class="collapse collapse-arrow bg-base-200 rounded-md">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">1.What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p class="text-sm">DOM (Document Object Model) is a programming interface for HTML documents. DOM allows
+                    programmatic access to the method tree. With them, you can change the structure, style or content of
+                    the document.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 rounded-md">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">2.How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p class="text-sm">getElementById(),getElementsByClassName(),querySelector(),querySelectorAll()</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 rounded-md">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">3.What is event delegation in the context of the DOM, and
+                why is it useful?</div>
+            <div class="collapse-content">
+                <p class="text-sm">Events in JavaScript are some of the user interfaces built into HTML. For example:
+                    Clicking a button, sending data to an input field and loading a webpage are also called an event.
+                    There are different types of events.
+                    For example: click, mouseover, mouseout,keyup etc</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 rounded-md">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">4.How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p class="text-sm">We use these methods to get, set, or remove properties of an element:
+                    getAttribute()
+                    setAttribute()
+                    removeAttribute() </p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-primary_bg h-24"></footer>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a9c612e423.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

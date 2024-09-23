@@ -21,3 +21,11 @@ document.getElementById('history-btn').addEventListener('click',function(){
     // Show Btn
     showBtn('history');
 })
+// Go to Blog Page
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href = './blog.html';
+})
+//Go to Home Page
+function home(){
+    window.location.href = './index.html'
+}
