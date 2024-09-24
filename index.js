@@ -26,18 +26,19 @@ document.getElementById('history-btn').addEventListener('click', function () {
 document.getElementById('donate-btn-1').addEventListener('click', function () {
     let modal = document.getElementById('my_modal_5');
     let inputValue = parseFloat(inputField.value);
+    let totalAmountValue = parseFloat(totalAmount.innerText);
+    console.log(totalAmountValue);
     inputField.value = "";
     if (inputValue < 0) {
-        alert('Sorry! This is a negative value.')
+        return alert('Sorry! This is a negative value.')
     }
-    else if (inputValue > 5500) {
+    else if (inputValue > totalAmountValue) {
         return alert('Your Account doesn`t have enough money.')
     }
     else if (!isNaN(inputValue)) {
         let addAmountValue = parseFloat(addAmount.innerText);
         let addMoney = addAmountValue + inputValue;
         document.getElementById('add-amount').innerText = addMoney;
-        let totalAmountValue = parseFloat(totalAmount.innerText);
         let currentAmount = totalAmountValue - inputValue;
         document.getElementById('total-amount').innerText = currentAmount;
         let history = document.getElementById('history');
@@ -57,11 +58,12 @@ document.getElementById('donate-btn-1').addEventListener('click', function () {
 document.getElementById('donate-btn-2').addEventListener('click', function () {
     let modal = document.getElementById('my_modal_5');
     let inputValueFeni = parseFloat(inputFieldFeni.value);
+    let totalAmountValue = parseFloat(totalAmount.innerText);
     inputFieldFeni.value = "";
     if (inputValueFeni < 0) {
         alert('Sorry! This is a negative value.')
     }
-    else if (inputValueFeni > 5500) {
+    else if (inputValueFeni > totalAmountValue) {
         return alert('Your Account doesn`t have enough money.')
     }
     else if (!isNaN(inputValueFeni)) {
@@ -88,11 +90,12 @@ document.getElementById('donate-btn-2').addEventListener('click', function () {
 document.getElementById('donate-btn-3').addEventListener('click', function () {
     let modal = document.getElementById('my_modal_5');
     let inputValueInjured = parseFloat(inputFieldInjured.value);
+    let totalAmountValue = parseFloat(totalAmount.innerText);
     inputFieldInjured.value = "";
     if (inputValueInjured < 0) {
         return alert('Sorry! This is a negative value.')
     }
-    else if (inputValueInjured > 5500) {
+    else if (inputValueInjured > totalAmountValue) {
         return alert('Your Account doesn`t have enough money.')
     }
     else if (!isNaN(inputValueInjured)) {
